@@ -2,11 +2,48 @@
 
 > MiniProject ของเราเนี่ย มันจะเกี่ยวกับ เว็ปไซต์คํานวนเกรดเฉลี่ย หรือ GPA Calculator
 
-ไฟล์ที่น้องจะต้อง Coding มี 2 ไฟล์ด้วยกัน
+## Initailize Project
 
-- `index.html` — Frontend side
-- `index.js` — Backend side
+ก่อนที่เราเริ่มทําโปรเจ็ค พี่จะให้น้องทําการ clone project กันก่อน
 
+**ขั้นตอน**
+1. ไปที่หน้า Desktop เเล้วคลิกขวา เลือก terminal เเล้วรันคําสั่งด้านล่าง
+    ```
+    git clone https://github.com/sit-camp-2026/miniProject.git
+    ```
+2. เปิด VScode -> File -> Open Folder -> Desktop -> เลือก miniProject เเล้วกด open
+
+3. ไปที่ terminal มุมซ้ายบน -> new terminal -> เเล้ว copy command ด้านล่างไปวาง
+    ```
+    git remote remove origin
+    ```
+## Push Project to GitHub
+จะเริ่มการ up project เราขึ้น บน clound เพื่อนําไปสู่การ deploy
+
+**ขั้นตอน**
+```
+git init
+```
+
+```
+git add .
+```
+
+```
+git commit -m "first commit"
+```
+
+```
+git branch -M main
+```
+
+```
+git remote add origin [YOUR_GITHUB_URL]
+```
+
+```
+git push -u origin main
+```
 ---
 
 ## File: index.html
