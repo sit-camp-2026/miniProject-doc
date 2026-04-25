@@ -648,3 +648,14 @@ function renderHistory(data) {
     - ดึงปุ่ม `.delete-btn` ทั้งหมดที่อยู่ใน `showHistory`
     - `console.log(buttons)` — ดู debug ว่าดึงปุ่มมาได้กี่ปุ่ม
     - วนซ้ำผูก `click` event ให้แต่ละปุ่ม เมื่อกด → เรียก `deleteData(id, "gpa")` แบบ async เพื่อลบข้อมูล
+
+### Implement init function
+เราได้ทําการสร้าง function renderHistory เสร็จเเล้ว นํามาใส่ใน function init กันเลย
+
+```javascript
+async function init() {
+  const data = await getAllData("gpa");
+  renderHistory(data);
+}
+```
+- ทําการเรียก function renderHistory เเล้วนําตัวเเปร data ใส่เข้าไปใน parameter ของ function init 
